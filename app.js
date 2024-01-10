@@ -1,5 +1,5 @@
 var app = require('./config/server');
-var rotaNoticias = require('./app/routes/noticias');
+var rotaNoticias = require('./app/routes/noticias')(app);
 var rotaHome = require('./app/routes/home')(app);
 var rotaFormularioInclusao = require('./app/routes/formulario_inclusao_noticia')(app);
 
